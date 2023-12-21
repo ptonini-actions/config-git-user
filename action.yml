@@ -1,0 +1,14 @@
+name: config-git-user
+description: ''
+inputs:
+  token:
+    description: ''
+    required: false
+    default: ${{ github.token }}
+  username:
+    description: ''
+    required: false
+    default: ${{ github.actor }}
+runs:
+  using: node16
+  main: dist/index.js
